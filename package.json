@@ -13,7 +13,11 @@
     "codegen": "playwright codegen https://www.saucedemo.com",
     "report": "playwright show-report",
     "trace": "playwright show-trace",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "test:mobile": "playwright test --project=mobile-chrome",
+    "test:setup": "playwright test --project=setup",
+    "install:browsers": "playwright install --with-deps",
+    "codegen:auth": "playwright codegen --save-storage=playwright/.auth/user.json https://www.saucedemo.com"
   },
   "devDependencies": {
     "@playwright/test": "^1.48.0",
